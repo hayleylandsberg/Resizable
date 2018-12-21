@@ -1,0 +1,57 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#container {
+    width: 100%;
+    height: 100%;
+    /* Disable selection so it doesn't get annoying */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: moz-none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#container #left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 100px;
+    background: seagreen;
+}
+#container #right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#container #handle {
+    position: absolute;
+    left: -4px;
+    top: 0;
+    bottom: 0;
+    width: 8px;
+    cursor: w-resize;
+}
+
+#rightCol1 {
+    background: crimson;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 50%;
+}
+
+#rightCol2 {
+    background: cornflowerblue;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 50%;
+}
